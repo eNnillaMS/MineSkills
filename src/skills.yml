@@ -1,0 +1,23 @@
+skills:
+    SKILLID:
+        name: Example Skill!
+        description: This is an example of what a skill might look like!
+        levelstyle: EXPONENTIAL
+        when: ((OnJob, OnCommand, Always))
+        EXPEvents:
+            BLOCK_BREAK:
+                STONE: 1
+                DIRT: 1
+                OBSIDIAN: 20
+                DIAMOND_ORE: 100
+            MOB_KILLED:
+                ZOMBIE: 2
+                SKELETON: 3
+                SPIDER: 3
+                SILVERFISH: 4
+                ENDERMAN: 10
+        Skills:
+            InstantBreak:
+                - STONE
+                - DIRT
+                - GRASS

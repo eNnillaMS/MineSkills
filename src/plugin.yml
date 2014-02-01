@@ -1,0 +1,20 @@
+name: MineSkills
+main: com.hotmail.hboutilier1996.MineSkills.MineSkills
+version: 0.0.1
+softdepend: [MineJobs]
+description: This is a completely customizable skill suite!
+author: eNnillaMS
+website: http://dev.bukkit.org/bukkit-plugins/mineskills/
+commands:
+  skills:
+    description: This is the main command.
+    usage: "Usage: /skills <usage>"
+permissions:
+  MineJobs.*:
+    description: Gives all permissions for plugin.
+    default: op
+    children:
+      MineJobs.player.*: true
+      MineJobs.admin.*: true
+      MineJobs.customs.*: true
+      MineJobs.signs.*: true
